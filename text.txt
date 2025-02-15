@@ -1,0 +1,103 @@
+datatypes size
+3 types of datatypes
+mantesa and exponent in base 2
+how are all datatypes stored in memory and their range
+How are negative numbers stored
+2's compliment
+bytes are stored in given bits in reverse manner(little endian and big endian system)
+~ not operator
+^ xor operator
+sizeof variable in other 2 types of datatypes
+passing other two types of datatypes in functions by value or reference
+cin.get() and cin and getline() and other ways to input strings
+size of string can increase and decrease unlike char array
+string is actually a class
+string methods and operations in c++(how many vector methods are applicable here)
+lexicographical order is check character by character one by one from left
+number of elements of string or char array
+cin.getline(string-name, length, delimiter(optional argument))
+inbuilt functions for character arrays
+How are multi-dimensional arrays sent as argument in functions
+representation of binary numbers in form of power of 2 like 1.01101 x 2^5
+binary addition, subtraction, division, etc...
+meaning of implicit and explicit typecasting
+Size of different datatype pointers in memory
+Pointer arithmatic for all operators
+all about hexadecimal form of address in memory
+arithmatic operators in binary strings(strings made of 0 and 1)
+REMEMBER putting & before sending parameters/arguments in functions when doing changes in them
+all string methods work for range 0 to size-1 as last digit is null character in each string remember that
+always use string_name.begin in sorting for defining start and end limit as sort(string.begin()+1, string.begin()+8)
+SEE THE CODE IN STRING CODE FILE
+pointer initiation and declaration should be done properly to a specific memory location not to a value or save uninitialized
+difference between number and char array is the value till which its pointer traverses before ending, as for number a size has to be fixed beforehand and in case of char there has to be a null character at termination
+arithmatic operators used on double and triple pointers
+reference variable created with syntax datatype & variable_name = another variable will create a new variable with no memory of itself and will be a reference variable to same memory as that of another variable
+Using this reference variable you can send these as value to other functions and still changes will be shown to original variable
+the way you can send data by reference similarly you can recieve data by reference too for example function named int &num(int n){int a = n; return a;} int k = num(i); but the problem here is scope of variable a is block and this is a huge problem as memory will clear it and you will be referring to same memory using k
+int *num(){int i = 10; return &i} int *p = num(); here too same problem, therefore whenever we returning a pointer, reference variable or memory related return then be cautious it will not cause compilation error but can be risky
+These above are the roots of dynamic memory allocation in heap using new format which you should read about
+whenever we allocate memory dynamically, 8 bytes are allocated on stack to the pointer pointing to memory in heap
+when allocating memory in 2D array, we first delete all individual arrays and then we clear the master array from memory
+Try using ternary operator more often
+WTF is inline function use(why can't we use normal functions only)
+if I make a reference variable k to another variable j const then we can still change the original variable j but cannot change it using k, but if it is the other way around that j is const and k is not then it will throw error if we try to change j using k
+Similar case is for pointers as we cannot change const variables using pointers
+Similarly you cannot change const variables in other functions too if sent by reference
+There is a huge difference between int * const p and int const * p pointer declaration as one is mutable and other is not
+Binary search time complexity is not O(1) but O(logN)
+learn how functions like substr() work and make a list of all for CP
+constant variables used in function argument or in classes??
+Learn how space complexity works in recursive algorithms(due to temporary memory creation for consecutive calls)(example in merge sort there is K*N(K is memory of each function call) memory for storage + n/2, n/4 ... temporary memories that I don't know if we will or will not consider, then KlogN memory for function storing whose size is always equal to height of recursion tree)
+size(space complexity) of classes and objects in different cases like operator overloading, functions, pointers, nodes, datatypes, etc
+Difference between their complexity and behaviour, memory storage statically declaring objects and dynamically declaring them
+Learn all about access modifiers(public, private, protected)
+Learn how to write classes in one cpp file and access them from another using include other file name property
+It is best to set everything private and write functions(getters and setters) to add constraints and authorisation on access and modification of it and validation and cyber security
+properties of constructor- same name as class, no return type, no input arguments(only for default constructor)
+So when we declare objects, we are actually calling the function constructor
+We can write multiple constructors with multiple arguments like seen in leetcode questions(these are called parameterized constructor)
+But the disadvantage is if we make parameterized one still the default one gets deleted so we have to then make one constructor for each case.
+Think what will happen if there are multiple parameterized constructors taking integer input and we call Student(102) then which one will be initialized
+this keyword is speacial word holds the address of current object to set values of variables of current object
+if we want to make s2 object with same properties as s1, then we have to make another function for it or re-declare instead we can use copy constructor(check if it is default or has to be made)
+for an object we cannot call constructor more than once in its life so we use copy assignment operator instead if both have been already declared.
+Destructor is also made default and is called once at end of function to free memory at end of object scope(is called automatically for all objects even if it is made by us)(has to be called for dynamically created objects)
+When we copy assignment operator during declaration then also copy constructor is called
+while printing values in class function, if we only write variable name without this it still means this->variable
+when we write another object as an argument in a class function, copy constructor is called to do pass by value and create copy, to avoid this we can use & before name just the way we do in copy by reference by passing a reference variable
+We can avoid changes in above mentioned statements to keep this object as read-only by passing constant reference variable
+read about all types of transform property and its use with all different types of transitions(you can either set transition to all properties but we can also mention specific transition to specific properties)
+We should prefer making objects dynamically and call destructor also on them
+Shallow copy in constructors and objects happens by copying the address of a piece of content instead of making its copy into our object which is dangerous not good and should be avoided.
+Instead we should make deep copy using standard cpp code to copy everything into our object as if we be lazy then shallow copy will happen
+inbuilt copy constructor does shallow copy
+objects in arguments should always be const reference variable
+When there are private fields in class then calling default constructor is not allowed and initialization of private fields has to be done during time of declaration itself else error
+meaning of explicit and implicit initialization
+we use initialization list to initialize const values present in public and private fields
+initialization list can be used for non const variables too but why do so much efforts if things can be done easily
+This is also important to use for reference variables present in public and private fields(check for private for all above)
+can we still use operators normally on doing operator overloading(there can be borderline cases, read about them)
+We can even overload more than one operator at a time like '=='
+
+
+
+Node* head in linked list is not any new variable but is one way of putting value in head component of node class, find other such ways like Node.head (something like that), but in case of making another temp variable we use same syntax Node* temp = head;
+Where does next variable come from?
+Taking input in linked list is also not that easy as we have to put a condition on when user will stop making it which i dont think is right as data can be -1
+Whenever we create nodes statically in linked list, the nodes get deleted after each iteration so we have to make them dynamically
+Linked list is one of the best examples of implementing recursive algorithms
+Stack is abstract datatype data structure
+read all about templates with temporary typename with single or multiple alphabets showing same and different classes. Also read about if nesting is allowed in templates and how to access them when taken to any level of nesting
+reading code of this stack and queue lecture is utmost important
+what is this .h extension
+In trie, if there is a word news, and we want new how will we tell trie that new is separate, if each such word is separate then ne will also be considered as a word
+add word, search, remove word all have complexity equal to word length in trie
+In case of BFS and DFS in disconnected graphs(2 different unconnected units of graphs) we will simply do BFS to our initial unit, then check visited array and start BFS from the other vertices in other unit
+uses of tries- space optimized, fast searching, easier pattern matching
+types of tries- compressed tries(further compress trie to reduce space, implementation is a bit difficult due to clubbing of characters and separating them, searching might take little bit more space(check once this is personal observation)), suffix tries(each possible suffix is added as child to root node, takes more space)
+if we choose element to be terminal node showing word ending it can also make extra words in trie in some cases(how to cater to them)
+Huffman coding refers to text compression to reduce space requirement to optimize space, we club lowest count alphabets to find total size and repeat same until all alphabets have been used to make tree like structure, in this tree we assign 0,1 to left and right of all clubbed node and through this sequence obtained from path we replace each character through its code and save space. Decompressing this compressed tree, we will replace each substring as we start obtaining them we will replace them with respective character with their code to retrieve our past string. This is implemented using priority queue(min) and we make an inverted binary tree.
+Encapsulation using classes is to put data and functions into same place & putting them together
+Abstraction is hiding internal processing and details from user, it is unnecessary for user to know all this and so only implementation should be shown.
