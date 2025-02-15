@@ -1,0 +1,3611 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+            cout<<n-j+1;
+            j++;
+        }
+        cout<<endl;
+        i++;
+        
+        
+    }
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+        i++;
+        
+        
+    }
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cout << "Enter n" << endl;
+	cin >> n;
+
+	int d = 2;
+	bool divided = false;
+	while (d < n) {
+		if (n % d == 0) {
+			cout << "Not Prime" << endl;
+			divided = true;
+		}
+		d = d + 1;
+	}
+	if (!divided) {
+		cout << "Prime" << endl;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cout << "Enter n" << endl;
+
+	cin >> n;
+
+	int i = 1;
+	while (i <= n) {
+		cout << i << endl;
+		i = i + 1;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int f;
+	cout << "Enter Fah Value" << endl;
+	cin >> f;
+	int c = (5.0/9) * (f - 32);
+	c = (5 * (f - 32))/9;
+
+	int r = 10 % 3;
+
+	cout << 10 % 3 << endl;
+	cout << c << endl;
+
+	int a;
+	int b;
+	cout << "Enter a and b" << endl;
+	cin >> a >> b;
+
+	bool isEqual = (a == b);
+	bool isAGreater = (a > b);
+	bool isALess = (a < b);
+	cout << "Are they Equal " << isEqual << endl;
+	cout << "is A greater " << isAGreater << endl;
+	cout << "is A less " << isALess << endl; 
+
+	bool third = isEqual && isAGreater;
+	bool fourth = isEqual || isAGreater;
+
+	cout << "Not equal " << !isEqual << endl;
+
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	char a = 234354;
+	cout << a << endl;
+	unsigned int b = -123;
+	cout << b << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	int b;
+
+	cout << "Enter the numbers" << endl;
+	cin >> a >> b;
+
+	int c = a + b;
+
+	cout << c << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Hello" << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int i=1;
+    int k=1;
+    while(i<=n){
+        int j=1;
+        while(j<=i){
+            cout<<k;
+            k++;
+            j++;
+        }
+        cout<<endl;
+        i++;
+        
+        
+    }
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int i=1;
+    int k=1;
+    while(i<=n){
+        int j=1;
+        char startChar='A'+i-1;
+        while(j<=n){
+            char ch=startChar+j-1;
+            cout<<ch;
+            
+            j++;
+        }
+        cout<<endl;
+        i++;
+        
+        
+    }
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	int i = 1;
+	while (i <= n) {
+		int spaces = 1;
+		while (spaces <= n - i) {
+			cout << ' ';
+			spaces = spaces + 1;
+		}
+
+		int stars = 1;
+		while (stars <= i) {
+			cout << '*';
+			stars = stars + 1;
+		}
+		cout << endl;
+		i = i + 1;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	int i = 1;
+	while (i <= n) {
+		int j = 1;
+		while (j <= n - i + 1) {
+			cout << '*';
+			j = j + 1;
+		}
+		cout << endl;
+		i = i + 1;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	int i = 1;
+	while (i <= n) {
+		int spaces = 1;
+		while (spaces <= n - i) {
+			cout << ' ';
+			spaces = spaces + 1;
+		}
+
+		int j = 1;
+		while (j <= i) {
+			cout << j;
+			j = j + 1;
+		}
+
+		j = i - 1;
+		while (j >= 1) {
+			cout << j;
+			j = j - 1;
+		}
+		cout << endl;
+		i = i + 1;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int ror = 15 | 30;
+	int rand = 15 & 30;
+	int rnot = ~15;
+	int rxor = 15 ^ 30;
+	int rls = 15 << 2;
+	int rrs = 15 >> 2;
+
+	cout << ror << endl;
+	cout << rand << endl;
+	cout << rnot << endl;
+	cout << rxor << endl;
+	cout << rls << endl;
+	cout << rrs << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	char c;
+	c = cin.get();
+	int count = 0;
+	while (c != '$') {
+		count++;
+		c = cin.get();
+	}
+	cout << count << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int fact(int n) {
+	//cout << a << endl;
+	int ans = 1;
+	for (int i = 1; i <=n ;i++) {
+		ans = ans * i;
+	}
+	return ans;
+}
+
+int main() {
+	int a;
+	cin >> a;
+	int output = fact(a);
+	//cout << ans << endl;
+	//cout << n << endl;
+	cout << output << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void increment(int a) {
+	a = a + 1;
+}
+
+int main() {
+	int a = 10;
+	increment(a);
+	cout << a << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+	// Take array input from the user
+
+	int n;
+	cin >> n;
+
+	int input[100];
+	
+	for(int i = 0; i < n; i++) {
+		cin >> input[i];
+	}
+
+	// Print array
+	for(int i = 0; i < n; i++) {
+		cout << input[i] << endl;
+	}
+
+	// Largest velement in the array
+
+	int max = INT_MIN;
+
+	for(int i = 0; i < n; i++) {
+		if(input[i] > max) {
+			max = input[i];
+		}
+	}
+
+	cout << "Max : " << max << endl;
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+#include <climits>
+using namespace std;
+
+void printArray(int input[], int n) {
+	for(int i = 0; i < n; i++) {
+		cout << input[i] << " ";
+	}
+	cout << endl;
+}
+
+void increment(int a, int b[], int n) {
+	a++;
+	b[0]++;
+}
+
+void reverse(int input[], int n) {
+	int i = 0, j = n - 1;
+	while(i < j) {
+		int temp = input[i];
+		input[i] = input[j];
+		input[j] =temp;
+		i++;
+		j--;
+	}
+}
+
+
+int main() {
+
+	int a = 10;
+	int b[10] = {1, 2, 3, 4, 5};
+	reverse(b, 5);
+	printArray(b, 5);
+
+	/*
+	increment(a, b, 10);
+
+	cout << "a : " << a << endl;
+	cout << "b[0] : " << b[0] << endl;
+	*/
+	
+	//	int input[100] = {1, 2, 3};
+	
+	/*
+	// Take array input from the user
+	int n;
+	cin >> n;
+	for(int i = 0; i < n; i++) {
+		cin >> input[i];
+	}*/
+
+//	printArray(b, 100);
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int binarySearch(int arr[], int n, int x) {
+	int start = 0, end = n - 1;
+	while(start <= end) {
+		int mid = (start + end) / 2;
+		if(arr[mid] == x) {
+			return mid;
+		}
+		else if(x < arr[mid]) {
+			end = mid - 1;
+		}
+		else {
+			start = mid + 1;
+		}
+	}
+
+	return -1;
+}
+
+int main() {
+	// Take array input from the user
+	int n;
+	cin >> n;
+
+	int input[100];
+	
+	for(int i = 0; i < n; i++) {
+		cin >> input[i];
+	}
+
+	int x;
+	cin >> x;
+
+	cout << binarySearch(input, n, x) << endl; 	
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void selectionSort(int input[], int n) {
+	for(int i = 0; i < n-1; i++ ) {
+	// Find min element in the array
+	int min = input[i], minIndex = i;
+	for(int j = i+1; j < n; j++) {
+		if(input[j] < min) {
+			min = input[j];
+			minIndex = j;
+		}
+	}
+	// Swap
+	int temp = input[i];
+	input[i] = input[minIndex];
+	input[minIndex] = temp;
+	}
+}
+
+int main() {
+	int input[] = {3, 1, 6, 9, 0, 4};
+	selectionSort(input, 6);
+	for(int i = 0; i < 6; i++) {
+		cout << input[i] << " ";
+			 
+	}
+	cout << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void printArray(int input[], int n) {
+	for(int i = 0; i < n; i++) {
+		cout << input[i] << " " ;
+	}
+	cout << endl;
+}
+
+void bubbleSort(int arr[], int n) {
+	for(int j = 0; j < n - 1; j++) {
+		for(int i = 0; i < n - 1 - j; i++) {
+			if(arr[i] > arr[i+1]) {
+				int temp = arr[i];
+				arr[i] = arr[i+1];
+				arr[i+1] = temp;
+			}
+		}
+	}
+}
+
+int main() {
+	// Take array input from the user
+	int n;
+	cin >> n;
+
+	int input[100];
+	
+	for(int i = 0; i < n; i++) {
+		cin >> input[i];
+	}
+	
+	bubbleSort(input, n);
+
+	printArray(input, n);
+	
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void insertionSort(int arr[], int n) {
+	for(int i = 1; i < n; i++) {
+		int current = arr[i];
+		int j;
+		for(j = i - 1; j >= 0; j--) {
+			if(current < arr[j]) {
+				arr[j+1] = arr[j];
+			}
+			else {
+				break;
+			}
+		}
+		arr[j+1] = current;
+	}
+
+}
+
+void printArray(int input[], int n) {
+	for(int i = 0; i < n; i++) {
+		cout << input[i] << " " ;
+	}
+	cout << endl;
+}
+
+int main() {
+	// Take array input from the user
+	int n;
+	cin >> n;
+
+	int input[100];
+	
+	for(int i = 0; i < n; i++) {
+		cin >> input[i];
+	}
+	
+	insertionSort(input, n);
+
+	printArray(input, n);
+	
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int length(char input[]) {
+	int count = 0;
+	for(int i = 0; input[i] != '\0'; i++) {
+		count++;
+	}
+	return count;
+}
+
+int main() {
+	char name[100];
+	cout << "Enter your name : ";
+	cin >> name;
+	/*
+	name[4] = 'x';
+	name[3] = 'd';
+	name[1] = '\0';
+	*/
+	cout << "Name : " << name << endl;
+
+	cout << "Length : " << length(name) << endl;
+
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int length(char input[]) {
+	int count = 0;
+	for(int i = 0; input[i] != '\0'; i++) {
+		count++;
+	}
+	return count;
+}
+
+void reverseString(char input[]) {
+	int len = length(input);
+	int i = 0, j = len - 1;
+	while(i < j) {
+		char temp = input[i];
+		input[i] = input[j];
+		input[j] = temp;
+		i++;
+		j--;
+	}
+}
+
+int main() {
+	char input[100];
+	//cin >> input;
+	cin.getline(input, 100);
+	
+	reverseString(input);
+	cout << input << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+#include <cstring>
+
+
+void printAllPrefixes(char input[]) {
+	// i represents end index of my prefix
+	for(int i = 0; input[i] != '\0'; i++) {
+			// j represents start index of my prefix
+		for(int j = 0; j <= i; j++) {
+			cout << input[j];
+		}
+		cout << endl;
+	}
+}
+
+int main() {
+	char input1[100] = "abcd";
+	printAllPrefixes(input1);
+
+
+
+	
+	/*
+	char input2[100] = "xy";
+	
+	cout << "Before copying : ";
+	cout << "Input 1 : " << input1 << endl;
+	cout << "Input 2 : " << input2 << endl;
+	//strcpy(input1, "hello");
+	
+	strncpy(input1, input2, 4);
+	
+	cout << "After copying : ";
+	cout << "Input 1 : " << input1 << endl;
+	cout << "Input 2 : " << input2 << endl;
+	*/
+
+
+
+
+	//cin >> input1;
+	//cin >> input2;
+
+
+	/*
+	if(strcmp(input1, input2) == 0) {
+		cout << "true" << endl;
+	}
+	else {
+		cout << "false" << endl;
+	}
+	*/
+
+
+
+
+	/*
+	int len = strlen(input);
+	cout << "Length : " << len << endl;
+	*/
+
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a[100][100];
+	int m, n;
+	cin >> m >> n;
+
+
+	// Taking input
+	for(int i = 0; i < m; i++) {
+		for(int j = 0; j < n; j++) {
+			cin >> a[i][j];
+		}
+	}
+
+	// print array row wise
+	cout << "Row wise : " << endl;
+	for(int i = 0; i < m; i++) {
+		for(int j = 0;  j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;	
+	}
+
+	cout << "Column wise : " << endl;
+	for(int j = 0; j < n; j++) {
+		for(int i = 0; i < m; i++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void printArray(int a[][5], int m, int n) {
+	for(int i = 0; i < m; i++) {
+		for(int j = 0;  j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;	
+	}
+}
+
+int main() {
+
+	int a[5][5] = {{1, 2}, {3, 4}};
+	printArray(a, 5, 5);
+
+
+	/*
+	int a[100][100];
+	int m, n;
+	cin >> m >> n;
+
+
+	// Taking input
+	for(int i = 0; i < m; i++) {
+		for(int j = 0; j < n; j++) {
+			cin >> a[i][j];
+		}
+	}
+
+	printArray(a, m, n);
+	*/
+	/*
+	// print array row wise
+	cout << "Row wise : " << endl;
+	for(int i = 0; i < m; i++) {
+		for(int j = 0;  j < n; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;	
+	}
+
+	cout << "Column wise : " << endl;
+	for(int j = 0; j < n; j++) {
+		for(int i = 0; i < m; i++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+	*/
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main(){
+
+    string name;
+    //char name[20];
+
+    cin>>name;
+
+    cout<<name;
+    cout<<name.size();
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main(){
+
+    // string L1,L2;
+
+    // getline(cin,L1);
+    // getline(cin,L2);
+
+    // cout<<L1<endl<<L2;
+
+    string name;
+    int age;
+
+    cin>>age;
+
+    cin.ignore(1);
+    getline(cin , name);
+
+    cout<<name<<" "<<age;
+
+    string a , b;
+
+
+    if(a<b) cout<<"a < b";
+        else cout<<"a > b;
+
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    
+    string word;
+    cin>>word;
+    cout<<word.at(4);
+
+    // for(int i=0; i<word.size(); i++){
+    //    cout<<word[i]<<" ";
+    // }
+
+    // for(char ele : word){
+    //    cout<<ele<<" ";
+    // }
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    
+    string st;
+    cin>>st;
+    int L = 0;
+    int R = st.size() - 1;
+    bool flag = true;
+    while(L <= R){
+        if(st[L] != st[R]){
+            flag = false;
+            break;
+        }
+        L++, R--;
+    }
+    if(flag == true) cout<<"Palindrome";
+    else cout<<"Not a Palindrome";
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    
+
+    string a = "abc";
+    string b = "012345";
+    string c = "helloToWorld";
+
+    // character addition
+
+    // a.push_back('$');
+    // b.insert(3, a);
+
+    // cout<<b;
+
+    // character renoval
+    //a.pop_back();
+
+    // c.erase(5, 2);
+
+    // cout<<c;
+    
+    // concatenation & append
+    a.append ("def");
+    cout<<a<<" , "<<b;
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main(){
+
+
+
+    string word;
+    cin>>word;
+
+    //[0,5] = > range 0,4
+    //(L,R)
+    reverse(word.begin() + 1 , word.begin() + 4);
+
+    cout<<word;
+    
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main(){
+
+    stirng word;
+    cin>>word;
+
+    //word-
+    //begin -> 'w'
+    //end -> '-'
+    //(L,R) => [L,R)
+    //begin -> 0
+    //(1 , 3) => (1 , 2)
+    sort(word.begin()+1, word.begin()+ 3 + 1);
+
+    cout<<word;
+    
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main(){
+
+    string text = "hellell";
+    string pat = "lle";
+
+    // cin>>text;
+
+    if(text.find(pat) == string::npos){
+        cout<<"No Match";
+    }
+    else{
+        cout<<"Match found at index "<<text.find(pat);
+    }
+    
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=10;
+    int *p =&i;
+    cout<<p<<endl;
+   // p = p+1 ;
+    p = p +2;
+    cout<<p<<endl;
+    p= p - 2;
+    cout<<p<<endl;
+
+    double d= 102.3;
+    double *dp = &d;
+    cout<<dp<<endl;
+    dp++;
+    cout<<dp<<endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a[10];
+    cout<<a<<endl;
+    cout<<&a[0]<<endl;
+    a[0]=5;
+    cout<<*a<<endl;
+    cout<<*(a+1)<<endl;
+    int *p = &a[0];
+    cout<<a<<endl;
+    cout<<p<<endl;
+
+    cout<<&p<<endl;
+    cout<<&a<<endl;
+
+    cout<<sizeof(p)<<endl;
+    cout<<sizeof(a)<<endl;
+
+    p=p+1;
+    //a=a+1; // not allowed
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    // char str[] ="abcde";
+    // char *pstr ="abcde";
+    int a[]={1,2,3};
+    char b[] ="abc";
+    cout<<a<<endl;
+    cout<<b<<endl;
+    char *c= &b[0];
+    cout<<c<<endl;
+    char c1='a';
+    char *pc = &c1;
+    cout<<c1<<endl;
+    cout<<pc<<endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+using namespace std;
+void increment1(int **p)
+{
+    p=p+1;
+}
+void increment2(int **p)
+{
+    *p = *p+1;
+}
+void increment3(int **p)
+{
+    **p = **p+1;
+}
+int main()
+{
+    int i=10;
+    int *p = &i;
+    int **p2 = &p;
+    cout<<p2<<endl;
+    cout<<&p<<endl;
+
+    cout<< p<<endl;
+    cout<<*p2<<endl;
+    cout<<&i<<endl;
+
+    cout<<i<<endl;
+    cout<<*p<<endl;
+    cout<<**p2<<endl;
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i = 65;
+	char c = i;
+	cout << c << endl;
+
+	int * p = &i;
+	char * pc = (char*)p;
+
+	cout << p << endl;
+	cout << pc << endl;
+
+	cout << *p << endl;
+	cout << *pc << endl;
+	cout << *(pc + 1) << endl;
+	cout << *(pc + 2) << endl;
+	cout << *(pc + 3) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void increment(int& i) {
+	i++;
+}
+
+// bad practice
+int& f(int n) {
+	int a = n;
+	return a;
+}
+
+// bad practice
+int* f2() {
+	int i = 10;
+	return &i;
+}
+
+int main() {
+	int* p = f2();
+
+	int i;
+	i = 10;
+
+	int& k1 = f(i);
+
+
+	increment(i);
+	cout << i << endl;
+
+	int& j = i;
+
+	i++;
+	cout << j << endl;
+	j++;
+	cout << i << endl;
+
+	int k = 100;
+	j = k;
+	cout << i << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+	int m, n;
+	cin >> m >> n;
+	int** p = new int*[m];
+	for (int i = 0; i < m; i++) {
+		p[i] = new int[i + 1];
+		for (int j = 0;j <n; j++) {
+			cin >> p[i][j];
+		}
+	}
+
+	for (int i = 0; i < m; i++) {
+		delete [] p[i];
+	}
+	delete [] p;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+	if (n == 0) {
+		return 1;
+	}
+	int smallOutput = factorial(n - 1);
+	int output = n * smallOutput;
+	return output;
+}
+
+int main() {
+	cout << factorial(4) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int fib(int n) {
+	if (n == 0) {
+		return 0;
+	}
+
+	if (n == 1) {
+		return 1;
+	}
+
+	int smallOutput1 = fib(n - 1);
+	int smallOutput2 = fib(n - 2);
+	return smallOutput1 + smallOutput2;
+}
+
+int main() {
+	cout << fib(3) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+bool is_sorted2(int a[], int size) {
+	if (size == 0 || size ==1) {
+		return true;
+	}
+
+	bool isSmallerOutput = is_sorted2(a + 1, size -1);
+	if (!isSmallerOutput) {
+		return false;
+	}
+	if (a[0] > a[1]) {
+		return false;
+	} else {
+		return true;
+	}
+
+}
+
+bool is_sorted(int a[], int size) {
+	if (size == 0 || size ==1) {
+		return true;
+	}
+
+	if (a[0] > a[1]) {
+		return false;
+	}
+	bool isSmallerSorted = is_sorted(a + 1, size - 1);
+	return isSmallerSorted;
+	/*if (isSmallerSorted) {
+		return true;
+	} else {
+		return false;
+	}*/
+}
+
+int main() {
+	
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void removeX(char s[]) {
+	if (s[0] == '\0') {
+		return;
+	}
+
+	if (s[0] != 'x') {
+		removeX(s + 1);
+	} else {
+		int i = 1;
+		for (; s[i] != '\0'; i++) {
+			s[i - 1] = s[i];
+		}
+		s[i - 1] = s[i];
+		removeX(s);
+	}
+}
+
+int length(char s[]) {
+	if (s[0] == '\0') {
+		return 0;
+	}
+	int smallStringLength = length(s + 1);
+	return 1 + smallStringLength;
+}
+
+int main() {
+	char str[100];
+	cin >> str;
+
+	int l = length(str);
+	cout << l << endl;
+	removeX(str);
+	cout << str << endl;
+	l = length(str);
+	cout << l << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	string* sp = new string;
+	*sp = "def";
+	cout << sp << endl;
+	cout << *sp << endl;
+
+	string s = "abc";
+	//getline(cin, s);
+	cout << s << endl;
+	
+	s = "defdef";
+	cout << s[0] << endl;
+	s[0] = 'a';
+	string s1;
+	s1 = "def";
+
+	string s2 = s + s1;
+	cout << s2 << endl;
+
+	s += s1;
+
+	cout << s1 << endl;
+	cout << s << endl;
+
+	cout << s.size() << endl;
+	cout << s.substr(3) << endl;	
+	cout << s.substr(3, 3) << endl;	
+
+	cout << s.find("def") << endl;
+
+
+
+
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int subs(string input, string output[]) {
+	if (input.empty()) {
+		output[0] = "";
+		return 1;
+	}
+
+	string smallString = input.substr(1);
+	int smallOutputSize = subs(smallString, output);
+	for (int i = 0; i < smallOutputSize; i++) {
+		output[i + smallOutputSize] = input[0] + output[i];
+	}
+	return 2 * smallOutputSize;
+}
+
+int main() {
+	string input;
+	cin >> input;
+	string* output = new string[1000];
+	int count = subs(input, output);
+	for (int i = 0; i < count; i++) {
+		cout << output[i] << endl;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void print_subs(string input, string output) {
+	if (input.length() == 0) {
+		cout << output << endl;
+		return;
+	}
+
+	print_subs(input.substr(1), output);
+	print_subs(input.substr(1), output + input[0]);
+}
+
+int main() {
+	string input;
+	cin >> input;
+	string output = "";
+	print_subs(input, output);
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+    int real1, imaginary1, real2, imaginary2;
+    
+    cin >> real1 >> imaginary1;
+    cin >> real2 >> imaginary2;
+    
+    ComplexNumbers c1(real1, imaginary1);
+    ComplexNumbers c2(real2, imaginary2);
+    
+    int choice;
+    cin >> choice;
+    
+    if(choice == 1) {
+        c1.plus(c2);
+        c1.print();
+    }
+    else if(choice == 2) {
+        c1.multiply(c2);
+        c1.print();
+    }
+    else {
+        return 0;
+    }   
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+class Polynomial {
+	int *degCoeff;
+	int capacity;
+
+public :
+
+	// Default Constructor
+
+	// Copy constructor
+
+	// Copy assignment operator
+
+	// print
+
+
+	// setCoefficient
+
+	// +
+
+	// -
+
+	// *
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+template <typename T>
+class Node {
+	public : 
+		T data;
+		Node<T> *next;
+
+		Node(T data) {
+			this -> data = data;
+			next = NULL;
+		}
+
+		~Node() {
+			delete next;
+		}
+};
+
+template <typename T>
+class Stack {
+	Node<T> *head;
+	int size;		// number of elements prsent in stack
+
+	public :
+
+	Stack() {
+
+	}
+
+	int getSize() {
+		
+	}
+
+	bool isEmpty() {
+
+	}
+
+	void push(T element) {
+
+	}
+
+	T pop() {
+
+	}
+
+	T top() {
+
+	}
+
+
+
+
+
+
+
+
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+template <typename T>
+class Node {
+	public : 
+		T data;
+		Node<T> *next;
+
+		Node(T data) {
+			this -> data = data;
+			next = NULL;
+		}
+};
+
+
+template <typename T>
+class Queue {
+	Nod<T> *head;
+	Node<T> *tail;
+	int size;
+
+	public : 
+
+	Queue() {
+
+	}
+
+	int getSize() {
+
+	}
+
+	bool isEmpty() {
+
+	}
+
+	void enqueue(T element) {
+
+	}
+
+	T front() {
+		
+	}
+
+	T dequeue() {
+
+	}
+
+
+
+
+
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	//vector<int> * vp = new vector<int>();
+	vector<int> v;
+
+	for (int i = 0; i < 100; i++) {
+		cout << "cap:" << v.capacity() << endl;
+		cout << "size:" << v.size() << endl;
+		v.push_back(i + 1);
+	}
+
+	v.push_back(10);
+	v.push_back(20);
+	v.push_back(30);
+
+	v[1] = 100;
+
+	// dont use [] for inserting elements
+	//v[3] = 1002;
+	//v[4] = 1234;
+
+	v.push_back(23);
+	v.push_back(234);
+
+	v.pop_back();
+
+	/*
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] << endl;
+	}
+
+
+	cout << v[0] << endl;
+	cout << v[1] << endl;
+	cout << v[2] << endl;
+	cout << v[3] << endl;
+	cout << v[4] << endl;
+	cout << v[5] << endl;
+	cout << v[6] << endl;
+
+	cout << "Size: " << v.size() << endl;
+
+	cout << v.at(2) << endl;
+	cout << v.at(6) << endl;
+	*/
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <vector>
+
+class PriorityQueue {
+	vector<int> pq;
+
+	public :
+
+	PriorityQueue() {
+
+	}
+
+	bool isEmpty() {
+		return pq.size() == 0;
+	}
+
+	// Return the size of priorityQueue - no of elements present
+	int getSize() {
+		return pq.size();
+	}
+
+	int getMin() {
+		if(isEmpty()) {
+			return 0;		// Priority Queue is empty
+		}
+		return pq[0];
+	}
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <vector>
+
+class PriorityQueue {
+	vector<int> pq;
+
+	public :
+
+	PriorityQueue() {
+
+	}
+
+	bool isEmpty() {
+		return pq.size() == 0;
+	}
+
+	// Return the size of priorityQueue - no of elements present
+	int getSize() {
+		return pq.size();
+	}
+
+	int getMin() {
+		if(isEmpty()) {
+			return 0;		// Priority Queue is empty
+		}
+		return pq[0];
+	}
+
+	void insert(int element) {
+		pq.push_back(element);
+		
+		int childIndex = pq.size() - 1;
+
+		while(childIndex > 0) {
+			int parentIndex = (childIndex - 1) / 2;
+
+			if(pq[childIndex] < pq[parentIndex]) {
+				int temp = pq[childIndex];
+				pq[childIndex] = pq[parentIndex];
+				pq[parentIndex] = temp;
+			}
+			else {
+				break;
+			}
+			childIndex = parentIndex;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+
+void inplaceHeapSort(int pq[], int n) {
+	// Build the heap in input array
+	for(int i = 1; i < n; i++) {
+		
+		int childIndex = i;
+		while(childIndex > 0) {
+			int parentIndex = (childIndex - 1) / 2;
+
+			if(pq[childIndex] < pq[parentIndex]) {
+				int temp = pq[childIndex];
+				pq[childIndex] = pq[parentIndex];
+				pq[parentIndex] = temp;
+			}
+			else {
+				break;
+			}
+			childIndex = parentIndex;
+		}
+	}
+
+	// Remove elements
+
+	int size = n;
+
+	while(size > 1) {
+		int temp = pq[0];
+		pq[0] = pq[size - 1];
+		pq[size-1] = temp;
+
+		size--;
+
+		int parentIndex = 0;
+		int leftChildIndex = 2 * parentIndex + 1;
+		int rightChildIndx = 2 * parentIndex + 2;
+
+		while(leftChildIndex < size) {
+			int minIndex = parentIndex;
+			if(pq[minIndex] > pq[leftChildIndex]) {
+				minIndex = leftChildIndex;
+			}
+			if(rightChildIndx < size && pq[rightChildIndx] < pq[minIndex]) {
+				minIndex = rightChildIndx;
+			}
+			if(minIndex == parentIndex) {
+				break;
+			}
+			int temp = pq[minIndex];
+			pq[minIndex] = pq[parentIndex];
+			pq[parentIndex] = temp;
+
+			parentIndex = minIndex;
+			leftChildIndex = 2 * parentIndex + 1;
+			rightChildIndx = 2 * parentIndex + 2;
+		}
+	}
+
+
+
+
+
+
+
+
+
+}
+
+
+int main() {
+	int input[] = {5, 1, 2, 0, 8};
+	inplaceHeapSort(input, 5);
+	for(int i = 0; i < 5; i++)
+	{
+		cout << input[i] << " ";
+	}
+	cout << endl;
+
+
+
+}
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+#include <queue>
+
+	
+int main() {
+	priority_queue<int> p;
+
+	p.push(100);
+	p.push(21);
+	p.push(7);
+	p.push(165);
+	p.push(78);
+	p.push(4);
+
+	cout << p.size() << endl;
+	cout << p.empty() << endl;
+	cout << p.top() << endl;
+
+	while(!p.empty()) {
+		cout << p.top() << endl;
+		p.pop();
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+#include <queue>
+
+	
+int main() {
+	priority_queue<int, vector<int>, greater<int> > p;
+
+	p.push(100);
+	p.push(21);
+	p.push(7);
+	p.push(165);
+	p.push(78);
+	p.push(4);
+
+	cout << p.size() << endl;
+	cout << p.empty() << endl;
+	cout << p.top() << endl;
+
+	while(!p.empty()) {
+		cout << p.top() << endl;
+		p.pop();
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+vector<int> removeDuplicates(int* a, int size) {
+	vector<int> output;
+	unordered_map<int, bool> seen;
+	for (int i = 0; i < size; i++) {
+		if (seen.count(a[i]) > 0) {
+			continue;
+		}
+		seen[a[i]] = true;
+		output.push_back(a[i]);
+	}
+	return output;
+}
+
+int main() {
+	int a[] = {1,2,3,3,2,1,4,3,6,5,5};
+	vector<int> output = removeDuplicates(a, 11);
+	for (int i = 0; i < output.size(); i++) {
+		cout << output[i] << endl;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+vector<int> removeDuplicates(int* a, int size) {
+	vector<int> output;
+	unordered_map<int, bool> seen;
+	for (int i = 0; i < size; i++) {
+		if (seen.count(a[i]) > 0) {
+			continue;
+		}
+		seen[a[i]] = true;
+		output.push_back(a[i]);
+	}
+	return output;
+}
+
+int main() {
+	int a[] = {1,2,3,3,2,1,4,3,6,5,5};
+	vector<int> output = removeDuplicates(a, 11);
+	for (int i = 0; i < output.size(); i++) {
+		cout << output[i] << endl;
+	}
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <string>
+using namespace std;
+
+template <typename V>
+class MapNode {
+	public:
+		string key;
+		V value;
+		MapNode* next;
+
+		MapNode(string key, V value) {
+			this->key = key;
+			this->value = value;
+			next = NULL;
+		}
+
+		~MapNode() {
+			delete next;
+		}
+};
+
+template <typename V>
+class ourmap {
+	MapNode<V>** buckets;
+	int count;
+	int numBuckets;
+
+	public:
+	ourmap() {
+		count = 0;
+		numBuckets = 5;
+		buckets = new MapNode<V>*[numBuckets];
+		for (int i = 0; i < numBuckets; i++) {
+			buckets[i] = NULL;
+		}
+	}
+
+	~ourmap() {
+		for (int i = 0; i < numBuckets; i++) {
+			delete buckets[i];
+		}
+		delete [] buckets;
+	}
+
+	int size() {
+		return count;
+	}
+
+	V getValue(string key) {
+		
+	}
+
+	private:
+	int getBucketIndex(string key) {
+		int hashCode = 0;
+
+		int currentCoeff = 1;
+		for (int i = key.length() - 1; i >= 0; i--) {
+			hashCode += key[i] * currentCoeff;
+			hashCode = hashCode % numBuckets;
+			currentCoeff *= 37;
+			currentCoeff = currentCoeff % numBuckets;
+		}
+
+		return hashCode % numBuckets;
+	}
+
+	public:
+	void insert(string key, V value) {
+		int bucketIndex = getBucketIndex(string key);
+		MapNode<V>* head = buckets[bucketIndex];
+		while (head != NULL) {
+			if (head->key == key) {
+				head->value = value;
+				return;
+			}
+			head = head->next;
+		}
+		head = buckets[bucketIndex];
+		MapNode<V>* node = new MapNode<V>(key, value);
+		node->next = head;
+		buckets[bucketIndex] = node;
+		count++;
+	}
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+class TrieNode {
+	public :
+	char data;
+	TreeNode **children;
+	bool isTerminal;
+
+	TrieNode(char data) {
+		this -> data = data;
+		children = new TrieNode*[26];
+		isTerminal = false;
+	}
+
+
+};
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int board[11][11];
+
+bool isPossible(int n,int row,int col){
+
+// Same Column
+  for(int i=row-1;i>=0;i--){
+    if(board[i][col] == 1){
+      return false;
+    }
+  }
+//Upper Left Diagonal
+  for(int i=row-1,j=col-1;i>=0 && j>=0 ; i--,j--){
+    if(board[i][j] ==1){
+      return false;
+    }
+  }
+
+  // Upper Right Diagonal
+
+  for(int i=row-1,j=col+1;i>=0 && j<n ; i--,j++){
+    if(board[i][j] == 1){
+      return false;
+    }
+  }
+
+  return true;
+}
+void nQueenHelper(int n,int row){
+  if(row==n){
+    // We have reached some solution.
+    // Print the board matrix
+    // return
+
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        cout << board[i][j] << " ";
+      }
+    }
+    cout<<endl;
+    return;
+
+  }
+
+  // Place at all possible positions and move to smaller problem
+  for(int j=0;j<n;j++){
+
+    if(isPossible(n,row,j)){
+      board[row][j] = 1;
+      nQueenHelper(n,row+1);
+      board[row][j] = 0;
+    }
+  }
+  return;
+
+}
+void placeNQueens(int n){
+
+  memset(board,0,11*11*sizeof(int));
+
+  nQueenHelper(n,0);
+
+}
+int main(){
+
+  placeNQueens(4);
+  return 0;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+void printSolution(int** solution,int n){
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			cout << solution[i][j] << " ";
+		}
+	}
+	cout<<endl;
+}
+void mazeHelp(int maze[][20],int n,int** solution,int x,int y){
+
+
+	if(x == n-1 && y == n-1){
+		solution[x][y] =1;
+		printSolution(solution,n);
+      	solution[x][y] =0;
+		return;
+	}
+	if(x>=n || x<0 || y>=n || y<0 || maze[x][y] ==0 || solution[x][y] ==1){
+		return;
+	}
+	solution[x][y] = 1;
+	mazeHelp(maze,n,solution,x-1,y);
+	mazeHelp(maze,n,solution,x+1,y);
+	mazeHelp(maze,n,solution,x,y-1);
+	mazeHelp(maze,n,solution,x,y+1);
+	solution[x][y] = 0;
+}
+void ratInAMaze(int maze[][20], int n){
+
+  int** solution = new int*[n];
+  for(int i=0;i<n;i++){
+  	solution[i] = new int[n];
+  }
+  mazeHelp(maze,n,solution,0,0);
+
+
+}
+int main(){
+	
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int fibo(int n) {
+	if(n <= 1) {
+		return n;
+	}
+	int a = fibo(n - 1);
+	int b = fibo(n - 2);
+	return a + b;
+}
+
+int fibo_helper(int n, int *ans) {
+	if(n <= 1) {
+		return n;
+	}
+
+	// Check if output already exists
+	if(ans[n] != -1) {
+		return ans[n];
+	}
+
+	// Calculate output
+	int a = fibo_helper(n-1, ans);
+	int b = fibo_helper(n-2, ans);
+
+	// Save the output for future use
+	ans[n] = a + b;
+	
+	// Return the final output
+	return ans[n];
+}
+
+int fibo_2(int n) {
+	int *ans = new int[n+1];
+
+	for(int i = 0; i <= n; i++) {
+		ans[i] = -1;
+	}
+	
+	return fibo_helper(n, ans);
+}
+
+int main() {
+	int n;
+	cin >> n;
+	cout << fibo_2(n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int fibo_3(int n) {
+	int *ans = new int[n+1];
+
+	ans[0] = 0;
+	ans[1] = 1;
+
+	for(int i = 2; i <= n; i++) {
+		ans[i] = ans[i-1] + ans[i-2];
+	}
+
+	return ans[n];
+}
+
+int fibo(int n) {
+	if(n <= 1) {
+		return n;
+	}
+	int a = fibo(n - 1);
+	int b = fibo(n - 2);
+	return a + b;
+}
+
+int fibo_helper(int n, int *ans) {
+	if(n <= 1) {
+		return n;
+	}
+
+	// Check if output already exists
+	if(ans[n] != -1) {
+		return ans[n];
+	}
+
+	// Calculate output
+	int a = fibo_helper(n-1, ans);
+	int b = fibo_helper(n-2, ans);
+
+	// Save the output for future use
+	ans[n] = a + b;
+	
+	// Return the final output
+	return ans[n];
+}
+
+int fibo_2(int n) {
+	int *ans = new int[n+1];
+
+	for(int i = 0; i <= n; i++) {
+		ans[i] = -1;
+	}
+	
+	return fibo_helper(n, ans);
+}
+
+int main() {
+	int n;
+	cin >> n;
+	cout << fibo_2(n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int minSteps(int n) {
+	// Base case
+	if(n <= 1) {
+		return 0;
+	}
+
+	// Recursive call
+	int x = minSteps(n - 1);
+
+	int y = INT_MAX, z = INT_MAX;
+	if(n % 2 == 0) {
+		y = minSteps(n/2);
+	}
+
+	if(n % 3 == 0) {
+		z = minSteps(n/3);
+	}
+
+	// Calculate final output
+	int ans = min(x, min(y, z)) + 1;
+
+	return ans;
+
+}
+
+int main() {
+	int n;
+	cin >> n;
+
+	cout << minSteps(n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int minStepsHelper(int n, int *ans) {
+	// Base case
+	if(n <= 1) {
+		return 0;
+	}
+
+	// Check if output already exists
+	if(ans[n] != -1) {
+		return ans[n];
+	}
+
+	// Calculate output
+	int x = minStepsHelper(n - 1, ans);
+
+	int y = INT_MAX, z = INT_MAX;
+	if(n % 2 == 0) {
+		y = minStepsHelper(n/2, ans);
+	}
+
+	if(n % 3 == 0) {
+		z = minStepsHelper(n/3, ans);
+	}
+
+	int output = min(x, min(y, z)) + 1;
+
+	// Save output for future use
+	ans[n] = output;
+
+	return output;
+
+}
+
+int misSteps_2(int n) {
+	int *ans = new int[n+1];
+
+	for(int i = 0; i <= n; i++) {
+		ans[i] = -1;
+	}
+
+	return minStepsHelper(n, ans);
+}
+
+
+int minSteps(int n) {
+	// Base case
+	if(n <= 1) {
+		return 0;
+	}
+
+	// Recursive call
+	int x = minSteps(n - 1);
+
+	int y = INT_MAX, z = INT_MAX;
+	if(n % 2 == 0) {
+		y = minSteps(n/2);
+	}
+
+	if(n % 3 == 0) {
+		z = minSteps(n/3);
+	}
+
+	// Calculate final output
+	int ans = min(x, min(y, z)) + 1;
+
+	return ans;
+
+}
+
+int main() {
+	int n;
+	cin >> n;
+
+	cout << minSteps(n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+#include <cmath>
+
+
+// h >= 0
+int balancedBTs(int h) {
+	if(h <= 1) {
+		return 1;
+	}
+
+	int mod = (int) (pow(10, 9)) + 7;
+	int x = balancedBTs(h - 1);
+	int y = balancedBTs(h - 2);
+
+	int temp1 = (int)(((long)(x)*x) % mod);
+	int temp2 = (int)((2* (long)(x) * y) % mod);
+	int ans = (temp1 + temp2) % mod;
+
+
+	//int ans = (x*x + 2*x*y) % mod;
+	return ans;
+}
+
+int main() {
+	int h;
+	cin >> h;
+	cout << balancedBTs(h) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+include <iostream>
+using namespace std;
+
+int minCostPath(int **input, int m, int n, int i, int j) {
+	// Base case
+	if(i == m- 1 && j == n- 1) {
+		return input[i][j];
+	}
+
+	if(i >= m || j >= n) {
+		return INT_MAX;
+	}
+
+	// Recursive calls
+	int x = minCostPath(input, m, n, i, j+1);
+	int y = minCostPath(input, m, n, i+1, j+1);
+	int z = minCostPath(input, m, n, i+1, j);
+
+	// Small Calculation
+	int ans = min(x, min(y, z)) + input[i][j];
+	return ans;
+}
+
+int minCostPath(int **input, int m, int n) {
+	return minCostPath(input, m, n, 0, 0);
+}
+
+int main() {
+	int m, n;
+	cin >> m >> n;
+	int **input = new int*[m];
+	for(int i = 0; i < m; i++) {
+		input[i] = new int[n];
+		for(int j = 0; j < n; j++) {
+			cin >> input[i][j];
+		}	
+	}
+	cout << minCostPath(input, m, n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+#include <climits>
+
+int minCostPath_Mem(int **input, int m, int n, int i, int j, int **output) {
+    if(i == m- 1 && j == n- 1) {
+        return input[i][j];
+    }
+    
+    if(i >= m || j >= n) {
+        return INT_MAX;
+    }
+    
+    // Check if ans already exists
+    if(output[i][j] != -1) {
+        return output[i][j];
+    }
+    
+    // Recursive calls
+    int x = minCostPath_Mem(input, m, n, i, j+1, output);
+    int y = minCostPath_Mem(input, m, n, i+1, j+1, output);
+    int z = minCostPath_Mem(input, m, n, i+1, j, output);
+    
+    // Small Calculation
+    int a = min(x, min(y, z)) + input[i][j];
+    
+    // Save the answer for future use
+    output[i][j] = a;
+    
+    return a;
+}
+
+int minCostPath_Mem(int **input, int m, int n, int i, int j) {
+    int **output = new int*[m];
+    for(int i = 0; i < m; i++) {
+        output[i] = new int[n];
+        for(int j = 0; j < n; j++) {
+            output[i][j] = -1;
+        }
+    }
+    
+    return minCostPath_Mem(input, m, n, i, j, output);
+}
+
+int minCostPath(int **input, int m, int n, int i, int j) {
+    // Base case
+    if(i == m- 1 && j == n- 1) {
+        return input[i][j];
+    }
+    
+    if(i >= m || j >= n) {
+        return INT_MAX;
+    }
+    
+    // Recursive calls
+    int x = minCostPath(input, m, n, i, j+1);
+    int y = minCostPath(input, m, n, i+1, j+1);
+    int z = minCostPath(input, m, n, i+1, j);
+    
+    // Small Calculation
+    int ans = min(x, min(y, z)) + input[i][j];
+    return ans;
+}
+
+int minCostPath(int **input, int m, int n) {
+    return minCostPath(input, m, n, 0, 0);
+}
+
+int main() {
+    int m, n;
+    cin >> m >> n;
+    int **input = new int*[m];
+    for(int i = 0; i < m; i++) {
+        input[i] = new int[n];
+        for(int j = 0; j < n; j++) {
+            cin >> input[i][j];
+        }	
+    }
+    cout << minCostPath_Mem(input, m, n, 0, 0) << endl;
+    cout << minCostPath(input, m, n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+#include <climits>
+
+int minCOst_DP(int **input, int m, int n) {
+	int **ans = new int*[m];
+	for(int i = 0; i < m; i++) {
+		ans[i] = new int[n];
+	}
+
+	ans[m-1][n-1] = input[m-1][n-1];
+
+	// Last row
+	for(int j = n - 2; j >= 0; j--) {
+		ans[m-1][j] = input[m-1][j] + ans[m-1][j+1];
+	}
+
+	// Last col
+	for(int i = m-2; i >= 0; i--) {
+		ans[i][n-1] = input[i][n-1] + ans[i+1][n-1];
+	}
+
+	for(int i = m-2; i >= 0; i--) {
+		for(int j = n-2; j >= 0; j--) {
+			ans[i][j] = input[i][j] + min(ans[i][j+1], min(ans[i+1][j+1], ans[i+1][j]));
+		}
+	}
+	return ans[0][0];
+}
+
+
+int minCostPath_Better(int **input, int m, int n, int i, int j, int **ans) {
+	if(i == m- 1 && j == n- 1) {
+		return input[i][j];
+	}
+
+	if(i >= m || j >= n) {
+		return INT_MAX;
+	}
+
+	if(ans[i][j] != -1) {
+		return ans[i][j];
+	}
+
+	int x = minCostPath_Better(input, m, n, i+1, j, ans);
+	if(x < INT_MAX) {
+		ans[i+1][j] = x;
+	}
+	int y = minCostPath_Better(input, m, n, i+1, j+1, ans);
+	if(y < INT_MAX) {
+		ans[i+1][j+1] = y;
+	}
+	int z = minCostPath_Better(input, m, n, i, j+1, ans);
+	if(z < INT_MAX) {
+		ans[i][j+1] = z;
+	}
+
+	ans[i][j] = min(x, min(y, z)) + input[i][j];
+	return ans[i][j];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int minCostPath_Better(int **input, int m, int n) {
+	int **ans = new int*[m];
+	for(int i = 0; i < m; i++) {
+		ans[i] = new int[n];
+		for(int j = 0; j < n; j++) {
+			ans[i][j] = -1;
+		}
+	}
+	return minCostPath_Better(input, m, n, 0, 0, ans);
+}
+
+
+int minCostPath(int **input, int m, int n, int i, int j) {
+	// Base case
+	if(i == m- 1 && j == n- 1) {
+		return input[i][j];
+	}
+
+	if(i >= m || j >= n) {
+		return INT_MAX;
+	}
+
+	// Recursive calls
+	int x = minCostPath(input, m, n, i, j+1);
+	int y = minCostPath(input, m, n, i+1, j+1);
+	int z = minCostPath(input, m, n, i+1, j);
+
+	// Small Calculation
+	int ans = min(x, min(y, z)) + input[i][j];
+	return ans;
+}
+
+int minCostPath(int **input, int m, int n) {
+	return minCostPath(input, m, n, 0, 0);
+}
+
+int main() {
+	int m, n;
+	cin >> m >> n;
+	int **input = new int*[m];
+	for(int i = 0; i < m; i++) {
+		input[i] = new int[n];
+		for(int j = 0; j < n; j++) {
+			cin >> input[i][j];
+		}	
+	}
+	cout << minCOst_DP(input, m, n) << endl;
+	cout << minCostPath_Better(input, m, n) << endl;
+	cout << minCostPath(input, m, n) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int lcs(string s, string t) {
+		// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return 0;
+	}
+
+		// Recursive calls
+	if(s[0] == t[0]) {
+		return 1 + lcs(s.substr(1), t.substr(1));
+	}
+	else {
+
+		int a = lcs(s.substr(1), t);
+		int b = lcs(s, t.substr(1));
+		int c = lcs(s.substr(1), t.substr(1));
+		return max(a, max(b, c));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+	string s, t;
+	cin >> s >> t;
+
+	cout << lcs(s, t) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int lcs_mem(string s, string t, int **output) {
+	int m = s.size();
+	int n = t.size();
+	
+	// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return 0;
+	}
+
+	// Check if ans already exists
+	if(output[m][n] != -1) {
+		return output[m][n];
+	}
+
+	int ans;
+	// Recursive calls
+	if(s[0] == t[0]) {
+		ans = 1 + lcs_mem(s.substr(1), t.substr(1), output);
+	}
+	else {
+		int a = lcs_mem(s.substr(1), t, output);
+		int b = lcs_mem(s, t.substr(1), output);
+		int c = lcs_mem(s.substr(1), t.substr(1), output);
+		ans = max(a, max(b, c));
+	}
+
+	// Save your calculation
+	output[m][n] = ans;
+
+	// Return ans
+	return ans;
+}
+
+int lcs_mem(string s, string t) {
+	int m = s.size();
+	int n = t.size();
+	int **output = new int*[m+1];
+	for(int i = 0; i <= m; i++) {
+		output[i] = new int[n+1];
+		for(int j = 0; j <= n; j++) {
+			output[i][j] = -1;
+		}
+	}
+
+	return lcs_mem(s, t, output);
+}
+
+int lcs(string s, string t) {
+		// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return 0;
+	}
+
+		// Recursive calls
+	if(s[0] == t[0]) {
+		return 1 + lcs(s.substr(1), t.substr(1));
+	}
+	else {
+
+		int a = lcs(s.substr(1), t);
+		int b = lcs(s, t.substr(1));
+		int c = lcs(s.substr(1), t.substr(1));
+		return max(a, max(b, c));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+	string s, t;
+	cin >> s >> t;
+
+	cout << lcs_mem(s, t) << endl;
+	cout << lcs(s, t) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int lcs_DP(string s, string t) {
+	int m = s.size();
+	int n = t.size();
+	int **output = new int*[m+1];
+
+	for(int i = 0; i <= m; i++) {
+		output[i] = new int[n+1];
+	}
+
+	// Fill 1st row
+	for(int j = 0; j <= n; j++) {
+		output[0][j] = 0;
+	}
+
+	// Fill 1st col
+	for(int i = 1; i <= m; i++) {
+		output[i][0] = 0;
+	}
+
+	for(int i = 1; i <= m; i++) {
+		for(int j = 1; j <= n; j++) {
+			// Check if 1st char matches
+			if(s[m-i] == t[n-j]) {
+				output[i][j] = 1 + output[i-1][j-1];
+			}
+			else {
+				int a = output[i-1][j];
+				int b = output[i][j-1];
+				int c = output[i-1][j-1];
+				output[i][j] = max(a, max(b, c));
+			}
+		}
+	}
+
+	return output[m][n];
+}
+
+int lcs_mem(string s, string t, int **output) {
+	int m = s.size();
+	int n = t.size();
+	
+	// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return 0;
+	}
+
+	// Check if ans already exists
+	if(output[m][n] != -1) {
+		return output[m][n];
+	}
+
+	int ans;
+	// Recursive calls
+	if(s[0] == t[0]) {
+		ans = 1 + lcs_mem(s.substr(1), t.substr(1), output);
+	}
+	else {
+		int a = lcs_mem(s.substr(1), t, output);
+		int b = lcs_mem(s, t.substr(1), output);
+		int c = lcs_mem(s.substr(1), t.substr(1), output);
+		ans = max(a, max(b, c));
+	}
+
+	// Save your calculation
+	output[m][n] = ans;
+
+	// Return ans
+	return ans;
+}
+
+int lcs_mem(string s, string t) {
+	int m = s.size();
+	int n = t.size();
+	int **output = new int*[m+1];
+	for(int i = 0; i <= m; i++) {
+		output[i] = new int[n+1];
+		for(int j = 0; j <= n; j++) {
+			output[i][j] = -1;
+		}
+	}
+
+	return lcs_mem(s, t, output);
+}
+
+int lcs(string s, string t) {
+		// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return 0;
+	}
+
+		// Recursive calls
+	if(s[0] == t[0]) {
+		return 1 + lcs(s.substr(1), t.substr(1));
+	}
+	else {
+
+		int a = lcs(s.substr(1), t);
+		int b = lcs(s, t.substr(1));
+		int c = lcs(s.substr(1), t.substr(1));
+		return max(a, max(b, c));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+	string s, t;
+	cin >> s >> t;
+
+	cout << lcs_DP(s, t) << endl;
+	cout << lcs_mem(s, t) << endl;
+	cout << lcs(s, t) << endl;
+}
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int editDistance(string s, string t) {
+	// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return max(s.size(), t.size());
+	}
+
+
+	if(s[0] == t[0]) {
+		return editDistance(s.substr(1), t.substr(1));
+	}
+	else {
+		// Insert
+		int x = editDistance(s.substr(1), t) + 1;
+		// Delete
+		int y = editDistance(s, t.substr(1)) + 1;
+		// Replace
+		int z = editDistance(s.substr(1), t.substr(1)) + 1;
+
+		return min(x, min(y, z));
+	}
+}
+
+int main() {
+	string s = "abcdf";
+	string t = "afd";
+	
+	cout << editDistance(s, t) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int editDistance_mem(string s, string t, int **output) {
+	int m = s.size();
+	int n = t.size();
+	
+	if(s.size() == 0 || t.size() == 0) {
+		return max(s.size(), t.size());
+	}
+
+	// Check if ans already exists
+	if(output[m][n] != -1) {
+		return output[m][n];
+	}
+
+	int ans;
+	if(s[0] == t[0]) {
+		ans = editDistance_mem(s.substr(1), t.substr(1), output);
+	}
+	else {
+		// Insert
+		int x = editDistance_mem(s.substr(1), t, output) + 1;
+		// Delete
+		int y = editDistance_mem(s, t.substr(1), output) + 1;
+		// Replace
+		int z = editDistance_mem(s.substr(1), t.substr(1), output) + 1;
+
+		ans =  min(x, min(y, z));
+	}
+
+	// Save the ans
+	output[m][n] = ans;
+
+	// Return the ans
+	return ans;
+}
+
+int editDistance_mem(string s, string t) {
+	int m = s.size();
+	int n = t.size();
+	int **ans = new int*[m+1];
+	for(int i = 0; i <= m; i++) {
+		ans[i] = new int[n+1];
+		for(int j = 0; j <= n; j++) {
+			ans[i][j] = -1;
+		}
+	}
+	return editDistance_mem(s, t, ans);
+
+}
+
+int editDistance(string s, string t) {
+	// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return max(s.size(), t.size());
+	}
+
+	if(s[0] == t[0]) {
+		return editDistance(s.substr(1), t.substr(1));
+	}
+	else {
+		// Insert
+		int x = editDistance(s.substr(1), t) + 1;
+		// Delete
+		int y = editDistance(s, t.substr(1)) + 1;
+		// Replace
+		int z = editDistance(s.substr(1), t.substr(1)) + 1;
+
+		return min(x, min(y, z));
+	}
+}
+
+int main() {
+	string s = "abcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdf";
+	string t = "afdiafdafdafdafd";
+
+	cout << editDistance_mem(s, t) << endl;
+	cout << editDistance(s, t) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int editDistance_DP(string s, string t) {
+	int m = s.size();
+	int n = t.size();
+	int **output = new int*[m+1];
+	for(int i = 0; i <= m; i++) {
+		output[i] = new int[n+1];
+	}
+
+	// Fill 1st row
+	for(int j = 0; j <= n; j++) {
+		output[0][j] = j;
+	}
+
+	// Fill 1st col
+	for(int i = 1; i <= m; i++) {
+		output[i][0] = i;
+	}
+
+	for(int i = 1; i <= m; i++) {
+		for(int j = 1; j <= n; j++) {
+			if(s[m-i] == t[n-j]) {
+				output[i][j] = output[i-1][j-1];
+			}
+			else {
+				int a = output[i-1][j];
+				int b = output[i][j-1];
+				int c = output[i-1][j-1];
+				output[i][j] = min(a, min(b, c)) + 1;
+			}
+		}
+	}
+
+	return output[m][n];
+}
+
+int editDistance_mem(string s, string t, int **output) {
+	int m = s.size();
+	int n = t.size();
+	
+	if(s.size() == 0 || t.size() == 0) {
+		return max(s.size(), t.size());
+	}
+
+	// Check if ans already exists
+	if(output[m][n] != -1) {
+		return output[m][n];
+	}
+
+	int ans;
+	if(s[0] == t[0]) {
+		ans = editDistance_mem(s.substr(1), t.substr(1), output);
+	}
+	else {
+		// Insert
+		int x = editDistance_mem(s.substr(1), t, output) + 1;
+		// Delete
+		int y = editDistance_mem(s, t.substr(1), output) + 1;
+		// Replace
+		int z = editDistance_mem(s.substr(1), t.substr(1), output) + 1;
+
+		ans =  min(x, min(y, z));
+	}
+
+	// Save the ans
+	output[m][n] = ans;
+
+	// Return the ans
+	return ans;
+}
+
+int editDistance_mem(string s, string t) {
+	int m = s.size();
+	int n = t.size();
+	int **ans = new int*[m+1];
+	for(int i = 0; i <= m; i++) {
+		ans[i] = new int[n+1];
+		for(int j = 0; j <= n; j++) {
+			ans[i][j] = -1;
+		}
+	}
+	return editDistance_mem(s, t, ans);
+
+}
+
+int editDistance(string s, string t) {
+	// Base case
+	if(s.size() == 0 || t.size() == 0) {
+		return max(s.size(), t.size());
+	}
+
+	if(s[0] == t[0]) {
+		return editDistance(s.substr(1), t.substr(1));
+	}
+	else {
+		// Insert
+		int x = editDistance(s.substr(1), t) + 1;
+		// Delete
+		int y = editDistance(s, t.substr(1)) + 1;
+		// Replace
+		int z = editDistance(s.substr(1), t.substr(1)) + 1;
+
+		return min(x, min(y, z));
+	}
+}
+
+int main() {
+	string s = "abcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdfabcdf";
+	string t = "afdiafdafdafdafd";
+
+	cout << editDistance_DP(s, t) << endl;
+	cout << editDistance_mem(s, t) << endl;
+	cout << editDistance(s, t) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int knapsack(int *weight, int *values, int n, int maxWeight) {
+	// Base case
+	if(n == 0 || maxWeight == 0) {
+		return 0;
+	}
+
+	if(weight[0] > maxWeight) {
+		return knapsack(weight + 1, values + 1, n - 1, maxWeight);
+	}
+
+	// Recursive calls
+	int x = knapsack(weight + 1, values + 1, n - 1, maxWeight - weight[0]) + values[0];
+	int y = knapsack(weight + 1, values + 1, n - 1, maxWeight);
+
+	return max(x, y);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+	int n;
+	int weights[] = {5, 1, 8, 9, 2};
+	int values[] = {4, 10, 2, 3, 1};
+	int W = 15;
+	cout << knapsack(weights, values, 5, W) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+using namespace std;
+
+void print(int** edges, int n, int sv, bool* visited){
+  cout << sv << endl;
+  visited[sv] = true;
+  for(int i=0; i<n; i++){
+    if(i==sv){
+      continue;
+    }
+    if(edges[sv][i]==1){
+      if(visited[i]){
+        continue;
+      }
+      print(edges, n, i, visited);
+    }
+  }
+}
+
+int main(){
+  int n;
+  int e;
+  cin >> n >> e;
+
+  int** edges = new int*[n];
+  for(int i=0; i<n; i++){
+    edges[i]=new int[n];
+    for(int j=0; j<n; j++){
+      edges[i][j]=0;
+    }
+  }
+
+  for(int i=0; i<e; i++){
+    int f,s;
+    cin >> f >> s;
+    edges[f][s]=1;
+    edges[s][f]=1;
+  }
+
+  bool* visited = new bool[n];
+
+  for(int i=0; i<n; i++){
+    visited[i]=false;
+  }
+
+  print(edges, n, 0, visited);
+  // Delete all the memory
+  return 0;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+#include<iostream>
+#include<climits>
+using namespace std;
+
+int findMinVertex(int* weights, bool* visited, int n){
+
+	int minVertex = -1;
+	for(int i = 0; i < n; i++){
+		if(!visited[i] && (minVertex == - 1 || weights[i] < weights[minVertex])){
+			minVertex = i;
+		}
+	}
+	return minVertex;
+}
+
+
+void prims(int** edges, int n){
+
+	int* parent = new int[n];
+	int* weights = new int[n];
+	bool* visited = new bool[n];
+
+	for(int i = 0; i < n; i++){
+		visited[i] = false;
+		weights[i] = INT_MAX;
+	}
+	parent[0] = -1;
+	weights[0] = 0;
+
+	for(int i = 0; i < n - 1; i++){
+		// Find Min Vertex
+		int minVertex = findMinVertex(weights, visited, n);
+		visited[minVertex] = true;
+		// Explore un visted neighbours
+		for(int j = 0; j < n; j++){
+			if(edges[minVertex][j] != 0 && !visited[j]){
+				if(edges[minVertex][j] < weights[j]){
+					weights[j] = edges[minVertex][j];
+					parent[j] = minVertex;
+				}
+			}
+		}
+	}
+
+	for(int i = 1; i < n; i++){
+		if(parent[i] < i){
+			cout << parent[i] < " << i << " " << weights[i] << endl;
+		}else{
+			cout << i << " " << parent[i] << " " << weights[i] << endl;
+		}
+	}
+}
+
+int main() {
+	int n;
+	int e;
+	cin >> n >> e;
+	int** edges = new int*[n];
+	for (int i = 0; i < n; i++) {
+		edges[i] = new int[n];
+		for (int j = 0; j < n; j++) {
+			edges[i][j] = 0;
+		}
+	}
+
+	for (int i = 0; i < e; i++) {
+		int f, s, weight;
+		cin >> f >> s >> weight;
+		edges[f][s] = weight;
+		edges[s][f] = weight;
+	}
+	cout << endl;
+	prims(edges, n);
+
+	for (int i = 0; i < n; i++) {
+		delete [] edges[i];
+	}
+	delete [] edges;
+}
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include<iostream>
+#include<climits>
+using namespace std;
+
+
+int findMinVertex(int* distance, bool* visited, int n){
+
+	int minVertex = -1;
+	for(int i = 0; i < n; i++){
+		if(!visited[i] && (minVertex == -1 ||  distance[i] < distance[minVertex])){
+			minVertex = i;
+		}
+	}
+	return minVertex;
+}
+
+void dijkstra(int** edges, int n){
+	int* distance = new int[n];
+	bool* visited = new bool[n];
+
+	for(int i = 0; i < n; i++){
+		distance[i] = INT_MAX;
+		visited[i] = false;
+	}
+
+	distance[0] = 0;
+
+	for(int i = 0; i < n - 1; i++){
+		int minVertex = findMinVertex(distance, visited, n);
+		visited[minVertex] = true;
+		for(int j = 0; j < n; j++){	
+			if(edges[minVertex][j] != 0 && !visited[j]){
+				int dist = distance[minVertex] + edges[minVertex][j];
+				if(dist < distance[j]){
+					distance[j] = dist;
+				}
+			}
+		}
+	}
+
+	for(int i = 0; i < n; i++){
+		cout << i << " " << distance[i] << endl;
+	}
+	delete [] visited;
+	delete [] distance;
+	
+}
+
+int main() {
+	int n;
+	int e;
+	cin >> n >> e;
+	int** edges = new int*[n];
+	for (int i = 0; i < n; i++) {
+		edges[i] = new int[n];
+		for (int j = 0; j < n; j++) {
+			edges[i][j] = 0;
+		}
+	}
+
+	for (int i = 0; i < e; i++) {
+		int f, s, weight;
+		cin >> f >> s >> weight;
+		edges[f][s] = weight;
+		edges[s][f] = weight;
+	}
+	cout << endl;
+	dijkstra(edges, n);
+
+	for (int i = 0; i < n; i++) {
+		delete [] edges[i];
+	}
+	delete [] edges;
+}
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+class Bus {
+	public :
+		void print();
+};
+
+void test();
+
+class Truck {
+	private :
+		int x;
+
+	protected :
+		int y;
+
+	public :
+		int z;
+
+		friend class Bus;
+
+		/*
+	friend void Bus :: print();
+
+	friend void test();
+	*/
+
+};
+
+void Bus :: print() {
+	Truck t;
+	t.x = 10;
+	t.y = 20;
+	cout << t.x << " " << t.y << endl;
+}
+
+void test() {
+	// Access truck private
+	Truck t;
+	t.x = 10;
+	t.y = 20;
+	cout << t.x << " " << t.y << endl;
+
+}
+
+
+
+
+
+
+
+
+
+int main() {
+	Bus b;
+	b.print();
+
+	test();
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+	if (n == 0) {
+		return 1;
+	}
+	int smallOutput = factorial(n - 1);
+	int output = n * smallOutput;
+	return output;
+}
+
+int main() {
+	cout << factorial(4) << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+bool is_sorted2(int a[], int size) {
+	if (size == 0 || size ==1) {
+		return true;
+	}
+
+	bool isSmallerOutput = is_sorted2(a + 1, size -1);
+	if (!isSmallerOutput) {
+		return false;
+	}
+	if (a[0] > a[1]) {
+		return false;
+	} else {
+		return true;
+	}
+
+}
+
+bool is_sorted(int a[], int size) {
+	if (size == 0 || size ==1) {
+		return true;
+	}
+
+	if (a[0] > a[1]) {
+		return false;
+	}
+	bool isSmallerSorted = is_sorted(a + 1, size - 1);
+	return isSmallerSorted;
+	/*if (isSmallerSorted) {
+		return true;
+	} else {
+		return false;
+	}*/
+}
+
+int main() {
+	
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+void removeX(char s[]) {
+	if (s[0] == '\0') {
+		return;
+	}
+
+	if (s[0] != 'x') {
+		removeX(s + 1);
+	} else {
+		int i = 1;
+		for (; s[i] != '\0'; i++) {
+			s[i - 1] = s[i];
+		}
+		s[i - 1] = s[i];
+		removeX(s);
+	}
+}
+
+int length(char s[]) {
+	if (s[0] == '\0') {
+		return 0;
+	}
+	int smallStringLength = length(s + 1);
+	return 1 + smallStringLength;
+}
+
+int main() {
+	char str[100];
+	cin >> str;
+
+	int l = length(str);
+	cout << l << endl;
+	removeX(str);
+	cout << str << endl;
+	l = length(str);
+	cout << l << endl;
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	string* sp = new string;
+	*sp = "def";
+	cout << sp << endl;
+	cout << *sp << endl;
+
+	string s = "abc";
+	//getline(cin, s);
+	cout << s << endl;
+	
+	s = "defdef";
+	cout << s[0] << endl;
+	s[0] = 'a';
+	string s1;
+	s1 = "def";
+
+	string s2 = s + s1;
+	cout << s2 << endl;
+
+	s += s1;
+
+	cout << s1 << endl;
+	cout << s << endl;
+
+	cout << s.size() << endl;
+	cout << s.substr(3) << endl;	
+	cout << s.substr(3, 3) << endl;	
+
+	cout << s.find("def") << endl;
+
+
+
+
+
+}
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# Todo list app
+A todo list app
+
+
+### General steps to follow when creating a project
+
+- Thinking about the UI
+- Functionality
+	- Add a TODO
+	- Delete a TODO
+	- check task
+	- total items count
+- Data
+	- tasks - an array
+	- task - {done, text, id}
+- Functions (in code)
+	- addTodo
+	- deleteTodo
+	- checkTodo
+	- renderTodosList
+	- showNotification
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
